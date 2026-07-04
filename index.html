@@ -190,7 +190,7 @@ Bugün tamamen senin günün.
 
 <script>
 
-const sifre = "iyikidoğdunyağmur01"; // Bunu istediğin zaman değiştirebilirsin.
+const sifre = "iyikidoğdunyağmur01";
 
 function login(){
 
@@ -208,18 +208,6 @@ document.getElementById("message").innerHTML =
 
 }
 
-}
-
-function openGallery(){
-alert("📸 Bu bölüm sonraki parçada eklenecek.");
-}
-
-function openFunny(){
-alert("😂 Bu bölüm sonraki parçada eklenecek.");
-}
-
-function openLetter(){
-alert("❤️ Bu bölüm sonraki parçada eklenecek.");
 }
 
 </script>
@@ -532,6 +520,16 @@ document.getElementById("home").classList.remove("hidden");
 
 }
 
+function showFinal(){
+
+document.getElementById("letter").classList.add("hidden");
+
+document.getElementById("final").classList.remove("hidden");
+
+startConfetti();
+
+}
+
 </script>
 
 <!-- ========================= -->
@@ -622,16 +620,6 @@ opacity:0;
 </style>
 
 <script>
-
-function showFinal(){
-
-document.getElementById("letter").classList.add("hidden");
-
-document.getElementById("final").classList.remove("hidden");
-
-startConfetti();
-
-}
 
 function startConfetti(){
 
